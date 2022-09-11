@@ -6,8 +6,15 @@ package main
 import "fmt"
 
 func main() {
-	var conferenceName = "Go Conference"
+	//Atribuicoes e Arrays
+	//https://www.digitalocean.com/community/tutorials/understanding-arrays-and-slices-in-go
+	//var numbers [3]int //Se declarar precisar implementar!
+	palavras := [4]string{"blue coral", "staghorn coral", "pillar coral", "elkhorn coral"}
 
-	fmt.Println("Welcome to", conferenceName, "booking application") //Assume os espacos entre a concatenacao
-	fmt.Println("Get your tickets here to attend")
+	//fmt.Println(palavras[1])
+	fmt.Println(palavras[1]) //Printando um slice (indice do array, mas com conceito mutavel)
+
+	//Concatenacoes
+	var conferenceName = "Go Conference"
+	fmt.Println("Welcome to", conferenceName, "booking application") //Assume espacos entre concatenacoes automaticamente
 }
